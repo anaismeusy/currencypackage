@@ -1,9 +1,11 @@
 #' Load the combined currency dataset
 #'
-#' This function loads the final currency dataset created by Role 1.
-#' It checks that the required columns exist and returns a tibble.
+#' This function loads and reads the final dataset (`combined_currency_data.csv`)
+#' and returns it as a clean tibble. It checks that the file exists and that
+#' required columns are present.
 #'
-#' @param path Path to `combined_currency_data.csv` in the group repository.
+#' @param path A file path to the `combined_currency_data.csv` dataset
+#' in the group repository.
 #'
 #' @return A tibble with one row per currency.
 #' @examples
@@ -24,10 +26,10 @@ load_currency_data <- function(path) {
     stop("File not found: ", path)
   }
 
-  # 3) We read the CSV file.
+  # 3) Read the CSV file.
   df <- readr::read_csv(path, show_col_types = FALSE)
 
-  # 4) We check that the essential columns are there.
+  # 4) Check that the essential columns are there.
   required_columns <- c("iso_code", "rate_to_usd")
   missing <- setdiff(required_columns, names(df))
 
@@ -38,6 +40,6 @@ load_currency_data <- function(path) {
     )
   }
 
-  # 5) We return the table as it is.
+  # 5) Return the tibble.
   return(df)
 }

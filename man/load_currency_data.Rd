@@ -7,14 +7,16 @@
 load_currency_data(path)
 }
 \arguments{
-\item{path}{Path to `combined_currency_data.csv` in the group repository.}
+\item{path}{A file path to the \code{combined_currency_data.csv} dataset
+in the group repository.}
 }
 \value{
 A tibble with one row per currency.
 }
 \description{
-This function loads the final currency dataset created by Role 1.
-It checks that the required columns exist and returns a tibble.
+This function loads and reads the final dataset (\code{combined_currency_data.csv})
+and returns it as a clean tibble. It checks that the file exists and that
+required columns are present.
 }
 \examples{
 \dontrun{
