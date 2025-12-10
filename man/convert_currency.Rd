@@ -2,25 +2,23 @@
 % Please edit documentation in R/convert.r
 \name{convert_currency}
 \alias{convert_currency}
-\title{Convert a monetary amount from one currency to another}
+\title{Convert an amount from one currency to another}
 \usage{
-convert_currency(amount, from, to)
+convert_currency(amount, from, to, currency_data)
 }
 \arguments{
-\item{amount}{Numeric value to convert.}
+\item{amount}{Numeric value. The amount to convert.}
 
-\item{from}{ISO code of the source currency (e.g. "CHF").}
+\item{from}{Character. ISO code of the source currency (e.g. "CHF").}
 
-\item{to}{ISO code of the target currency (e.g. "EUR").}
+\item{to}{Character. ISO code of the target currency (e.g. "EUR").}
+
+\item{currency_data}{A tibble returned by load_currency_data().
+Contains at least iso_code and rate_to_usd.}
 }
 \value{
-A single numeric value: the converted amount.
+A numeric value corresponding to the converted amount.
 }
 \description{
-This function converts an amount from a source currency (\code{from})
-to a target currency (\code{to}) using the internal conversion rates.
-}
-\details{
-The function automatically loads the currency dataset using
-\code{load_currency_data()}.
+Convert an amount from one currency to another
 }
