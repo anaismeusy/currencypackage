@@ -2,33 +2,20 @@
 % Please edit documentation in R/convert.r
 \name{convert_from_reference}
 \alias{convert_from_reference}
-\title{Convert from a reference currency to all other currencies}
+\title{Convert one reference currency into all others}
 \usage{
-convert_from_reference(amount, ref_currency)
+convert_from_reference(amount, ref_currency, currency_data)
 }
 \arguments{
-\item{amount}{Numeric amount in the reference currency.}
+\item{amount}{Numeric value. The amount to convert.}
 
-\item{ref_currency}{ISO code of the reference currency (e.g. "CHF").}
+\item{ref_currency}{Character. ISO code of the reference currency.}
+
+\item{currency_data}{A tibble returned by load_currency_data().}
 }
 \value{
-A tibble with one row per target currency, containing:
-\item{from}{reference currency code}
-\item{to}{target currency code}
-\item{currency_name}{name of the target currency (if available)}
-\item{converted_amount}{numeric amount in the target currency}
+A tibble with columns: from, to, currency_name, converted_amount.
 }
 \description{
-This function takes an amount in a reference currency and returns
-a table with the equivalent amount in all other currencies.
-}
-\details{
-Given (amount, reference currency), show a scrollable list of
-conversions.
-}
-\examples{
-\dontrun{
-  convert_from_reference(100, "CHF")
-}
-
+Convert one reference currency into all others
 }
