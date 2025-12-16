@@ -63,12 +63,12 @@ This returns a tibble containing:
 
 ### Role in the group project 
 
-This package corresponds to *Role 2 - Package development & Website*. 
+This package corresponds to **Role 2 - Package development & Website**. 
 
-It is designed to be used by *Role 3 (dashboard/web app development)*, which : 
+It is designed to be used by **Role 3 (dashboard/web app development)**, which : 
 - provides the dataset path, 
 - calls the conversion functions, 
 - displays the result in the user interface. 
 
-The package does *not* contain the dataset itself and doses not assume any fixed 
+The package does **not** contain the dataset itself and doses not assume any fixed 
 file path. 
