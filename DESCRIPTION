@@ -10,7 +10,7 @@ Authors@R: c(
     )
   )
 Description: Tools to load currency data and perform currency conversions for 
-interactive dashboard.
+  interactive dashboard.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
