@@ -3,3 +3,6 @@
 export(convert_currency)
 export(convert_from_reference)
 export(load_currency_data)
+importFrom(readr,read_csv)
+importFrom(tibble,tibble)
+importFrom(tidyr,drop_na)
