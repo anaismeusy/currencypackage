@@ -1,10 +1,4 @@
 
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # currencypackage
 
 The goal of currencypackage is to provide simple and reusable tools to
