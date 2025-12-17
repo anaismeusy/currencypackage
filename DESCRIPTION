@@ -10,7 +10,7 @@ Authors@R: c(
     )
   )
 Description: Tools to load, clean and convert currencies
-License: 
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/anaismeusy/currencypackage
