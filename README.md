@@ -1,4 +1,10 @@
 
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
 # currencypackage
 
 The goal of currencypackage is to provide simple and reusable tools to
@@ -7,9 +13,10 @@ part of the *Data and Code Management* group project and is used by the
 dashboard application.
 
 The package supports: 
+
 - loading a processed currency dataset
 - converting an amount between two currencies
-- converting an amount from a reference currency to all other currencies
+- Converting an amount from a reference currency to all other currencies
 
 ------------------------------------------------------------------------
 
@@ -58,6 +65,7 @@ head(
 ```
 
 This returns a tibble containing: 
+
 - the reference currency,
 - the target currency,
 - the currency name,
@@ -69,9 +77,10 @@ This package corresponds to **Role 2 - Package development & Website**.
 
 It is designed to be used by **Role 3 (dashboard/web app development)**,
 which : 
+
 - provides the dataset path,
 - calls the conversion functions,
-- displays the result in the user interface.
+- displays the result in the user interface. 
 
 The package does **not** contain the dataset itself and doses not assume
 any fixed file path.
