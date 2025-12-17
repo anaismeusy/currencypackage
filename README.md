@@ -78,3 +78,10 @@ which :
 
 The package does **not** contain the dataset itself and doses not assume
 any fixed file path.
+
+## Development & reproducibility
+
+This package follows standard R package development practices.
+Continuous integration is handled via GitHub Actions, running `R CMD check`
+on each push to ensure code quality and reproducibility.
+
