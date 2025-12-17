@@ -1,0 +1,14 @@
+--- 
+title: "API reference"
+--- 
+
+## Functions 
+
+### `load_currency_data(path)`
+Loads a processed currency dataset and checks required columns. 
+
+### `convert_currency(amount, from, to, currency_data)`
+Converts an amount from one currency to another. 
+
+### `convert_from_reference(amount, ref_currency, currency_data)`
+Converts an amount from a reference currency to all other currencies. 

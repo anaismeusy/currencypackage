@@ -1,0 +1,22 @@
+project:
+  type: website
+
+website:
+  title: "currencypackage"
+  navbar:
+    left:
+      - text: Overview
+        href: index.qmd
+      - text: Installation
+        href: installation.qmd
+      - text: Get started
+        href: get-started.qmd
+      - text: Examples
+        href: examples.qmd
+      - text: API reference
+        href: api.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true

@@ -1,0 +1,19 @@
+---
+title: "Installation"
+---
+
+## Local installation
+
+This package is not published on CRAN.
+
+To use it locally:
+
+1.  Clone the GitHub repository
+2.  Open the project in RStudio
+3.  Load the package with:
+
+``` r
+devtools::load_all()
+```
+
+The package is now ready to be used.

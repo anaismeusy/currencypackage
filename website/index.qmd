@@ -1,0 +1,17 @@
+---
+title: "Overview"
+---
+
+## currencypackage
+
+**currencypackage** provides simple and reusable tools to load currency data 
+and perform currency conversions. 
+
+It was developed as part of the *Data and Code Management* group project and 
+is used by the dashboard application. 
+
+### Main features 
+
+- Load a processed currency dataset
+- Convert an amount between two currencies 
+- Convert an amount from a reference currency to all others

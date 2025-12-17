@@ -1,0 +1,12 @@
+---
+title: "Get started"
+---
+
+## Load the currency dataset
+
+You must provide the path to the processed dataset. 
+
+```r
+path <- "../DnCM-Project-2025/data/processed/combined_currency_data.csv"
+currency_data <- load_currency_data(path)
+```

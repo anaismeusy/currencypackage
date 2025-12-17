@@ -1,0 +1,33 @@
+---
+title: "Examples"
+---
+
+## Convert between two currencies 
+
+```r
+convert_currency(
+  amount = 100, 
+  from = "CHF",
+  to = "EUR", 
+  currency_data = currency_data
+)
+```
+
+## Convert from a reference currency 
+
+```r
+head(
+  convert_from_reference(
+    amount = 100, 
+    ref_currency = "CHF",
+    currency_data = currency_data
+  )
+)
+```
+
+This returns a table with : 
+
+- reference currency, 
+- target currency,
+- currency name, 
+- converted amount. 
