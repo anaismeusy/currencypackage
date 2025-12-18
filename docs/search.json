@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "structure.html",
+    "href": "structure.html",
+    "title": "Project structure",
+    "section": "",
+    "text": "The project follows a standard R package structure, complemented by a documentation website and continuous integration workflows.\ncurrencypackage/\n├── .github/\n│   └── workflows/\n│       └── R-CMD-check.yaml      # GitHub Actions workflow to automatically run R CMD check\n│\n├── R/                            # Package functions\n│   ├── load_currency_data.R      \n│   ├── convert_from_reference.R  \n│   └── convert_currency.R        \n│\n├── man/                          # Function documentation (Rd files)\n├── tests/                        # Unit tests\n├── website/                      # Quarto documentation website\n│   ├── index.qmd\n│   ├── installation.qmd\n│   ├── get-started.qmd\n│   ├── examples.qmd\n│   ├── api.qmd\n│   └── structure.qmd\n│\n├── DESCRIPTION                   # Package metadata and dependencies\n├── NAMESPACE                     # Exported functions and imported packages\n├── README.md                     # Project overview\n├── LICENSE                       # MIT license (short form)\n├── LICENSE.md                    # Full MIT license text\n├── .Rbuildignore                 # # Files to exclude from R package build\n├── .gitignore                    # Files to exclude from version control\n└── currencypackage.Rproj         # RStudio project file"
+  },
+  {
+    "objectID": "structure.html#repository-overview",
+    "href": "structure.html#repository-overview",
+    "title": "Project structure",
+    "section": "",
+    "text": "The project follows a standard R package structure, complemented by a documentation website and continuous integration workflows.\ncurrencypackage/\n├── .github/\n│   └── workflows/\n│       └── R-CMD-check.yaml      # GitHub Actions workflow to automatically run R CMD check\n│\n├── R/                            # Package functions\n│   ├── load_currency_data.R      \n│   ├── convert_from_reference.R  \n│   └── convert_currency.R        \n│\n├── man/                          # Function documentation (Rd files)\n├── tests/                        # Unit tests\n├── website/                      # Quarto documentation website\n│   ├── index.qmd\n│   ├── installation.qmd\n│   ├── get-started.qmd\n│   ├── examples.qmd\n│   ├── api.qmd\n│   └── structure.qmd\n│\n├── DESCRIPTION                   # Package metadata and dependencies\n├── NAMESPACE                     # Exported functions and imported packages\n├── README.md                     # Project overview\n├── LICENSE                       # MIT license (short form)\n├── LICENSE.md                    # Full MIT license text\n├── .Rbuildignore                 # # Files to exclude from R package build\n├── .gitignore                    # Files to exclude from version control\n└── currencypackage.Rproj         # RStudio project file"
+  }
+]

@@ -16,6 +16,8 @@ website:
         href: examples.qmd
       - text: API reference
         href: api.qmd
+      - text: Project structure
+        href: structure.qmd
 
 format:
   html:

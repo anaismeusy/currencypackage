@@ -1,0 +1,37 @@
+# Project structure
+
+## Repository overview
+
+The project follows a standard R package structure, complemented by a documentation website and continuous integration workflows.
+
+``` text
+currencypackage/
+├── .github/
+│   └── workflows/
+│       └── R-CMD-check.yaml      # GitHub Actions workflow to automatically run R CMD check
+│
+├── R/                            # Package functions
+│   ├── load_currency_data.R      
+│   ├── convert_from_reference.R  
+│   └── convert_currency.R        
+│
+├── man/                          # Function documentation (Rd files)
+├── tests/                        # Unit tests
+│   └── testthat/
+├── website/                      # Quarto documentation website
+│   ├── index.qmd
+│   ├── installation.qmd
+│   ├── get-started.qmd
+│   ├── examples.qmd
+│   ├── api.qmd
+│   └── structure.qmd
+│
+├── DESCRIPTION                   # Package metadata and dependencies
+├── NAMESPACE                     # Exported functions and imported packages
+├── README.md                     # Project overview
+├── LICENSE                       # MIT license (short form)
+├── LICENSE.md                    # Full MIT license text
+├── .Rbuildignore                 # # Files to exclude from R package build
+├── .gitignore                    # Files to exclude from version control
+└── currencypackage.Rproj         # RStudio project file
+```
